@@ -1,0 +1,52 @@
+$primary-color: #2c7eea;
+$primary-font: 'Raleway', sans-serif;
+
+* {
+  box-sizing: border-box;
+  padding-left: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $primary-font;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: $primary-font;
+}
+
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  background-color: $primary-color;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: $primary-color;
+}
