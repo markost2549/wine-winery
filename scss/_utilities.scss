@@ -1,5 +1,9 @@
-$primary-color: #2c7eea;
-$primary-font: 'Raleway', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+$primary-color: #bf2422;
+$primary-font: 'Castoro', serif;
+$logo-text: 'Yellowtail', cursive;
 
 * {
   box-sizing: border-box;
@@ -10,6 +14,7 @@ $primary-font: 'Raleway', sans-serif;
 body {
   font-family: $primary-font;
   line-height: 1.4;
+  color: #ffffff;
 }
 
 a {
@@ -49,4 +54,25 @@ ul {
 
 .btn:hover {
   background-color: $primary-color;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ffffff;
+  font-size: 1rem;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: ffffff;
+  font-size: 1rem;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: ffffff;
+  font-size: 1rem;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: ffffff;
+  font-size: 1rem;
 }
