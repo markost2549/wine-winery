@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
 $primary-color: #bf2422;
-$primary-font: 'Castoro', serif;
+// $primary-font: 'Castoro', serif;
+$primary-font: 'Cinzel', serif;
 $logo-text: 'Yellowtail', cursive;
 
 * {
@@ -14,7 +17,7 @@ $logo-text: 'Yellowtail', cursive;
 body {
   font-family: $primary-font;
   line-height: 1.4;
-  color: #ffffff;
+  color: #000;
 }
 
 a {
@@ -25,12 +28,29 @@ p {
   margin: 0.75rem 0;
 }
 
+.logo-font {
+  font-family: $logo-text;
+  font-size: 2rem;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-dark {
+  color: #777777;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
 ul {
   list-style: none;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1450px;
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
@@ -43,6 +63,13 @@ ul {
   color: $primary-font;
 }
 
+.lg-heading {
+  font-size: 2.5rem;
+}
+.md-heading {
+  font-size: 1.5rem;
+}
+
 .btn {
   display: inline-block;
   color: #ffffff;
@@ -50,28 +77,38 @@ ul {
   padding: 0.75rem 2rem;
   border: none;
   border-radius: 5px;
+  margin-top: 0.5rem;
 }
 
+.btn-transparent {
+  background: transparent;
+  font-size: 1rem;
+  border: 2px solid $primary-color;
+  letter-spacing: 0.1rem;
+}
 .btn:hover {
   background-color: $primary-color;
+  transition: 0.8s ease-in-out;
+  transition-property: color, background-color;
 }
 
-::-webkit-input-placeholder {
+// Search placeholder
+.search::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #ffffff;
   font-size: 1rem;
 }
-::-moz-placeholder {
+.search::-moz-placeholder {
   /* Firefox 19+ */
   color: ffffff;
   font-size: 1rem;
 }
-:-ms-input-placeholder {
+.search:-ms-input-placeholder {
   /* IE 10+ */
   color: ffffff;
   font-size: 1rem;
 }
-:-moz-placeholder {
+.search:-moz-placeholder {
   /* Firefox 18- */
   color: ffffff;
   font-size: 1rem;
