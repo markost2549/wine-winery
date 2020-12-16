@@ -214,15 +214,19 @@
       h1 {
         text-shadow: 0px 10px 24px rgba(171, 171, 171, 1);
       }
-    }
 
-    .social a {
-      color: utilities.$primary-color;
-      font-size: 3rem;
-      padding: 0 2rem;
+      .social {
+        display: flex;
 
-      i:hover {
-        text-shadow: 0px 10px 24px rgba(171, 171, 171, 1);
+        a {
+          color: utilities.$primary-color;
+          font-size: 3rem;
+          padding: 0 2rem;
+
+          i:hover {
+            text-shadow: 0px 10px 24px rgba(171, 171, 171, 1);
+          }
+        }
       }
     }
 
