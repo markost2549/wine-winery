@@ -14,7 +14,6 @@
     .logo-img {
       font-family: utilities.$logo-text;
       font-size: 4rem;
-
       text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
         -1px 1px 0 #000, 1px 1px 0 #000;
     }
@@ -83,7 +82,7 @@
 
     img {
       width: 400px;
-      margin-bottom: 8rem;
+      margin-bottom: 7rem;
     }
   }
 
@@ -207,12 +206,20 @@
 
     .item {
       margin-bottom: 2rem;
+
+      h1 {
+        text-shadow: 0px 10px 24px rgba(171, 171, 171, 1);
+      }
     }
 
     .social a {
       color: utilities.$primary-color;
       font-size: 3rem;
       padding: 0 2rem;
+
+      i:hover {
+        text-shadow: 0px 10px 24px rgba(171, 171, 171, 1);
+      }
     }
 
     .newsletter {
@@ -243,6 +250,12 @@
         border-top-right-radius: 50rem;
         border-bottom-right-radius: 50rem;
         color: #ffffff;
+
+        &:hover {
+          -webkit-box-shadow: 11px 10px 24px -3px rgba(171, 171, 171, 1);
+          -moz-box-shadow: 0px 10px 24px -3px rgba(171, 171, 171, 1);
+          box-shadow: 0px 10px 24px -3px rgba(171, 171, 171, 1);
+        }
       }
     }
   }
